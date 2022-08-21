@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RADIO</title>
+	<link rel="icon" href="img/My project (2).png project (2).png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gulzar&family=Roboto:wght@700&family=Rubik+Moonrocks&display=swap" rel="stylesheet">
+
+    
+    <style>
+       
+#divbut {
+	width: 95%;
+	margin: auto;
+	height: 90px;
+	background-color:cadetblue;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	padding-left:15px;
+	padding-right:20px ;
+}
+.h3 {
+font-size: x-large;
+justify-self: flex-start;
+align-self: flex-end;
+transform: translateY(-15px);
+
+}
+#but {
+	background-color: #495e5f;
+	border-radius: 8px;
+	font-weight: bolder;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	border-color: white;
+	color: white;
+	height: 40px;
+	
+}
+
+#but:hover {
+	border-color: black;
+}
+#but2  {
+	background-color: white;
+	border-radius: 8px;
+	font-weight: bolder;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	border-color: white;
+	color: #495e5f;
+	height: 40px;
+    
+}
+#but2:hover {
+	border-color: black;
+
+}
+
+#divbut2 {
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+}
+p {
+	
+	font-size: larger;
+	font-weight: bolder;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	width: 100%;
+	text-align: center;
+}
+
+
+#arab {
+background-image: url(img/arabflag.jpg);
+color: white;
+width: 70px;
+border-radius: 8px;
+	font-weight: bolder;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	border-color: white;
+}
+#english {
+	background-image: url(img/englishflag.jpg);
+	background-size: cover;
+	border-radius: 8px;
+	font-weight: bolder;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	border-color: white;
+	width: 70px;
+	
+}
+
+
+
+
+
+#ousidebox {
+	width: 30%;
+	margin:auto ;
+	float: right;
+}
+#insidebox {
+	margin: auto;
+width: 150px;
+height: 100px;
+text-align: center;
+display: block;
+
+}
+#time{
+	
+    height: 50%;
+    color: aliceblue;
+    font-size: 15px;
+    font-family: 'Gulzar', serif;
+    background-color: black;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#date{
+	height: 50%;
+    background: aliceblue;
+    font-size: 15px;
+    font-family: 'Saira Stencil One', cursive;
+}
+#settime,#setdate{
+    margin: 0%;
+}
+#radioplayer {
+	width: 70%;
+	background-color: #495e5f;
+	height: 1000px;
+    margin: 2px;
+}
+
+#headradio {
+display: flex;
+justify-content: center;
+}
+#imgradio {
+	width: 200px;
+	height:150px ;
+}
+
+#titleradio {
+	font-family: 'Rubik Moonrocks', cursive;
+	font-size: 30px;
+    color:#f96065 ;
+	font-weight: 200;
+}
+/* article */
+article{
+    text-align: center;
+}
+#player_buttons{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+#player_buttons img{
+    margin: 0 15px;
+    float: left;
+    width: 45px;
+    height: 45px;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 4px;
+    background: #e6e7e8;
+    margin: 0px;
+  }
+input[type=range]::-webkit-slider-thumb {  
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background: gray;
+    -webkit-appearance: none;
+}
+#colors{
+    margin-top:15px;
+}
+#colors button{
+    margin-top: 12px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 0px solid white;
+}
+#color-1{
+    background:#212020;
+}
+#color-2{
+    background:#ff5353;
+}
+#color-3{
+    background: cadetblue;
+}
+#color-4{
+    background: black;
+}
+/* article */
+
+</style>
+</head>
+<body id="bodyi" oncopy="oncop()">
+
+
+	            <!-- header -->
+    <div id="divbut">
+		<h3  id="h3">RADIO</h3>
+		<div>
+		<button id="english">english</button>
+	    <button id="arab"> arab</button>
+		<button id="but" >darck mode</button>  
+		<button id="but2">normal mode </button>
+		
+	</div>
+	</div>
+	<div style="height: 90px;"></div>
+	<hr/>
+	            <!-- header end -->
+
+
+
+	             <!-- time and date -->
+	<main id="ousidebox">
+		<main id="insidebox">
+			
+			<article id="time"><h2 id="settime">11:00:00</h2> </article>
+			<article id="date"> <p id="setdate">20-07-2022</p></article>
+		</main>
+	</main>
+	             <!-- time and date -->
+
+
+
+	            <!-- radio player -->
+    <main id="radioplayer">
+<div id="headradio">
+	<img src="img/radio.png" id="imgradio" > </div>
+	<p id="titleradio">RADIO FM</p>
+
+
+
+	<article id="player_buttons">
+		<img src="img/back.png" alt="" id="back">
+		<img src="img/play.png" alt="" id="play">
+		<img src="img/next.png" alt="" id="next">
+	</article>
+
+	<article>
+		<audio src="" id="audio_file"></audio>
+		<h2 id="volumetitle">volume</h2>
+		<input id="volume" type="range" value="50" min="0" max="100" id="range">  
+		<h2 id="speedtitle">speed</h2>
+		<input id="speed" type="range" value="100" min="0" max="200" id="range">         
+	</article>
+
+	
+	<article id="colors">
+			<button id="color-1"></button>
+			<button id="color-2"></button>
+			<button id="color-3"></button>
+			<button id="color-4"></button>
+   </article>
+	</main>
+
+	             <!-- radio player end -->
+
+
+
+
+
+
+
+
+		<script src="javas.js">
+		</script> 
+	
+   
+    
+</body>
+</html>
